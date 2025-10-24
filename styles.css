@@ -59,14 +59,14 @@ main{
     opacity: 0.8;
     display: flex;
     flex-direction: column;
-    border: 3px solid;
+    border: 3px solid transparent;
     gap: 25px;
     padding: 20px;
-    background: white;
     border-radius: 10px;
     border-bottom: 0;
     border-right: 0;
-    border-image: linear-gradient(85deg,#ff6b6b, #4ecdc4, #45b7d1, #f9ca24, #a55eea, #26de81)1;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(85deg,#ff6b6b, #4ecdc4, #45b7d1, #f9ca24, #a55eea, #26de81)border-box;
     box-shadow: 0 0 3px 4px  rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease,box-shadow 0.3s ease;
 }
@@ -86,6 +86,7 @@ main{
     gap: 8px;
 }
 .verified h2{
+    text-shadow: 1px 1px 4px #666;
     font-size: 1.2rem;
     color: #333;
 }
@@ -102,16 +103,17 @@ main{
     justify-content: center;
     align-items: center;   
 }
-.span{
+.span i{
     font-size:  1.2rem;
     color:  #ffd700;
 }
 .brah{
-    border-image: linear-gradient(80deg,#26de81, #ff6b6b, #4ecdc4 , #a55eea, #f9ca24 )1;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(80deg,#26de81, #ff6b6b, #4ecdc4 , #a55eea, #f9ca24 )border-box;
 }
 .djingarey, .yacoubou{
     opacity: 0.8;
-    border: 3px solid;
+    border: 3px solid transparent;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -120,30 +122,35 @@ main{
     border-radius: 10px;
     border-bottom: 0;
     border-right: 0;
-    border-image: linear-gradient(90deg, #26de81, #ff6b6b, #4ecdc4 , #a55eea, #f9ca24)1;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #26de81, #ff6b6b, #4ecdc4 , #a55eea, #f9ca24)border-box;
     box-shadow: 0 0 3px 4px  rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease,box-shadow 0.3s ease;
 }
 .yacoubou{ 
-    border-image: linear-gradient(90deg, #f9ca24, #ff6b6b,#26de81, #4ecdc4 , #a55eea )1;
+    background: linear-gradient(white, white) padding-box,
+                 linear-gradient(90deg, #f9ca24, #ff6b6b,#26de81, #4ecdc4 , #a55eea )border-box;
 }
 .mariam, .haoua{
     opacity: 0.8;
-    border: 3px solid;
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 20px;
-    background-color: #FFFFFF;
+    background-color: white;
     border-radius: 10px;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(80deg, #a55eea, #ff6b6b, #26de81, #4ecdc4, #f9ca24) border-box;
+    border: 3px solid transparent;
     border-bottom: 0;
     border-right: 0;
-    border-image: linear-gradient(80deg, #a55eea, #ff6b6b, #26de81, #4ecdc4, #f9ca24)1;
     box-shadow: 0 0 3px 4px  rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease,box-shadow 0.3s ease;
 }
 .haoua{
-    border-image: linear-gradient(90deg,#26de81,#ff6b6b,  #a55eea,  #4ecdc4, #f9ca24)1;
+     background: linear-gradient(white, white) padding-box,
+                 linear-gradient(90deg,#26de81,#ff6b6b,  #a55eea,  #4ecdc4, #f9ca24)border-box;
 }
 .yacouba{
     opacity: 0.8;
@@ -155,10 +162,10 @@ main{
     border-radius: 10px;
     border-bottom: none;
     border-right: none;
-    border-image: linear-gradient(80deg, #e69e39, #ff6b6b, #26de81, #4ecdc4, #f9ca24)1;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(80deg, #e69e39, #ff6b6b, #26de81, #4ecdc4, #f9ca24)border-box;
     box-shadow: 0 0 3px 4px  rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
-    
+    transition: transform 0.3s ease,box-shadow 0.3s ease;   
 }
 
 .kina p, .brah p, .djingarey p, .mariam p, .haoua p, .yacouba p, .yacoubou p{
@@ -170,9 +177,9 @@ main{
     box-shadow: 0 0 13px 16px rgba(0, 0, 0, 0.3);
     transform:translate(20px,25px); 
     cursor: pointer; 
-    animation: 1.6s ease forwards; 
-    opacity: 0.8;
-    background:linear-gradient(135deg, white 0%, #c2a9dd 100%);
+    animation: 0.6s ease forwards; 
+    opacity: 1;
+   
 }
 @media (max-width: 768px) {
     .header h1{
